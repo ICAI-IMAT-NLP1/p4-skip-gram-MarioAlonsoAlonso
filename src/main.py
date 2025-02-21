@@ -29,6 +29,7 @@ def main():
     model_path = os.path.join(runs_folder, model_filename)  # Full path to the model
     train_model = True
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    print(device)
 
     print("Step 1: Loading and preprocessing data...")
     tokens = load_and_preprocess_data(file_path)
